@@ -1,11 +1,11 @@
-# Stage 1: Build (Keep using 11 to match your code)
+# Stage 1: Build
 FROM maven:3.8.5-openjdk-11 AS build
 COPY . /app
 WORKDIR /app
 RUN mvn clean package -DskipTests
 
-# Stage 2: Run (Switch to 17 to fix the Railway/Cgroup bug)
-FROM tomcat:9.0-jdk17-openjdk-slim
+# Stage 2: Run (Using Temurin JDK 17 - the most stable for Railway)
+FROM tomcat:9.0-jdk17-temurin-jammy
 RUN rm -rf /usr/local/tomcat/webapps/*
 COPY --from=build /app/target/TaskManagement.war /usr/local/tomcat/webapps/ROOT.war
 
