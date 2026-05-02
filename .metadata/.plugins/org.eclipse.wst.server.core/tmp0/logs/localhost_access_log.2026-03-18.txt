@@ -1,0 +1,8 @@
+127.0.0.1 - - [18/Mar/2026:12:24:16 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [18/Mar/2026:12:24:17 +0530] "GET /JobApplicationTracker/addJob.html HTTP/1.1" 200 595
+0:0:0:0:0:0:0:1 - - [18/Mar/2026:12:24:17 +0530] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [18/Mar/2026:12:25:14 +0530] "POST /JobApplicationTracker/addApplication HTTP/1.1" 404 792
+0:0:0:0:0:0:0:1 - - [18/Mar/2026:12:25:42 +0530] "POST /JobApplicationTracker/addApplication HTTP/1.1" 404 792
+127.0.0.1 - - [18/Mar/2026:12:35:14 +0530] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [18/Mar/2026:12:35:44 +0530] "POST /JobApplicationTracker/addApplication HTTP/1.1" 404 792
+0:0:0:0:0:0:0:1 - - [18/Mar/2026:12:35:46 +0530] "POST /JobApplicationTracker/addApplication HTTP/1.1" 404 792
