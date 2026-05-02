@@ -1,14 +1,12 @@
-# Stage 1: Build the application
+# Stage 1: Build
 FROM maven:3.8.5-openjdk-11 AS build
 COPY . /app
 WORKDIR /app
 RUN mvn clean package -DskipTests
 
-# Stage 2: Run the application in Tomcat
-FROM tomcat:9.0-jdk11-openjdk
-# Remove default Tomcat apps
+# Stage 2: Run (Using Temurin JDK 17 - the most stable for Railway)
+FROM tomcat:9.0-jdk17-temurin-jammy
 RUN rm -rf /usr/local/tomcat/webapps/*
-# Copy the built WAR file and rename to ROOT.war for root context
 COPY --from=build /app/target/TaskManagement.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
