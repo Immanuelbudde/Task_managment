@@ -1,12 +1,14 @@
-# Stage 1: Build (Keep using 11 to match your code)
+# Stage 1: Build the application
 FROM maven:3.8.5-openjdk-11 AS build
 COPY . /app
 WORKDIR /app
 RUN mvn clean package -DskipTests
 
-# Stage 2: Run (Switch to 17 to fix the Railway/Cgroup bug)
-FROM tomcat:9.0-jdk17-openjdk-slim
+# Stage 2: Run the application in Tomcat
+FROM tomcat:9.0-jdk11-openjdk
+# Remove default Tomcat apps
 RUN rm -rf /usr/local/tomcat/webapps/*
+# Copy the built WAR file and rename to ROOT.war for root context
 COPY --from=build /app/target/TaskManagement.war /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
