@@ -1,6 +1,6 @@
-package com.jobtracker.servlet;
+package com.taskmanager.servlet;
 
-import com.jobtracker.dao.ApplicationDAO;
+import com.taskmanager.dao.ApplicationDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

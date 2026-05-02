@@ -1,4 +1,4 @@
-package com.jobtracker.model;
+package com.taskmanager.model;
 
 import java.sql.Timestamp;
 

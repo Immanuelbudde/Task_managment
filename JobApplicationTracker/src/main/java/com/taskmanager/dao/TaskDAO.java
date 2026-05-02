@@ -1,6 +1,6 @@
-package com.jobtracker.dao;
+package com.taskmanager.dao;
 
-import com.jobtracker.model.Task;
+import com.taskmanager.model.Task;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package com.jobtracker.dao;
+package com.taskmanager.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

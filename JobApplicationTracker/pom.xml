@@ -5,12 +5,12 @@
              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.jobtracker</groupId>
-    <artifactId>JobApplicationTracker</artifactId>
+    <groupId>com.taskmanager</groupId>
+    <artifactId>TeamTaskManager</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>Job Application Tracker</name>
+    <name>Team Task Manager</name>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -58,7 +58,7 @@
     </dependencies>
 
     <build>
-        <finalName>JobApplicationTracker</finalName>
+        <finalName>TaskManagement</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

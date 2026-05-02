@@ -1,6 +1,6 @@
-package com.jobtracker.dao;
+package com.taskmanager.dao;
 
-import com.jobtracker.model.User;
+import com.taskmanager.model.User;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

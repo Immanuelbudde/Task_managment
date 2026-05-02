@@ -1,6 +1,6 @@
-package com.jobtracker.dao;
+package com.taskmanager.dao;
 
-import com.jobtracker.model.Application;
+import com.taskmanager.model.Application;
 
 import java.sql.*;
 import java.util.ArrayList;

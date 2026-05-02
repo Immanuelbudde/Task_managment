@@ -5,7 +5,7 @@
              http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <display-name>Job Application Tracker</display-name>
+    <display-name>Team Task Manager</display-name>
 
     <!-- ===== Welcome File — redirect root to login ===== -->
     <welcome-file-list>
